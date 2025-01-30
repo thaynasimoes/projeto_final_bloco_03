@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# Farmácia - Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este repositório contém a implementação do front-end de uma farmácia, desenvolvido com **React** e **Tailwind CSS**. A aplicação se conecta a um backend construído com **Spring** e permite aos usuários interagir com categorias e produtos de uma farmácia.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+A interface do usuário permite as seguintes ações:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Listar Categorias e Produtos**: Exibe uma listagem completa com todas as categorias e produtos disponíveis.
+- **Buscar por ID ou Nome**: Pesquisa de categorias ou produtos utilizando seu ID ou nome.
+- **Cadastrar Produtos ou Categorias**: Formulário para criação de novos produtos ou categorias.
+- **Atualizar Registros**: Modificação dos dados de produtos ou categorias existentes.
+- **Deletar Registros**: Remoção de produtos ou categorias pelo ID.
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **React**: Biblioteca JavaScript para construir a interface de usuário.
+- **Tailwind CSS**: Framework de CSS para estilização rápida e responsiva.
+- **Axios**: Biblioteca para realizar requisições HTTP ao backend.
